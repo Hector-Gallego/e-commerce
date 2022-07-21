@@ -1,0 +1,44 @@
+.productos{
+    padding: 0 20rem 0 20rem;
+    margin-top: 5rem;
+
+}
+
+.productos__leyenda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.productos__leyenda h1{
+    font-size: 3rem;
+}
+.productos__ver-todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productos__ver-todo a{
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    color: #2A7AE4;
+    text-decoration: none;
+}
+
+.productos__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.principal{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.productos_all {
+    background: #F5F5F5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+

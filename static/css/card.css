@@ -1,0 +1,34 @@
+.productos__card {
+    width: 22rem;
+    min-width: 15rem;
+    margin-bottom: 3rem;
+
+}
+
+
+.card-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.card-body p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.card-body span{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
