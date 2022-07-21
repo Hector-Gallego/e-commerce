@@ -27,7 +27,7 @@
     /* banner */
     .banner {
         padding-left: 2rem;
-        background: url("/static/assets/images/img-banner2.png") no-repeat;
+        background: url("../assets/images/img-banner2.png") no-repeat;
         background-size: 100% 100%;
     }
 
@@ -131,7 +131,7 @@
     /* banner */
 
     .banner{
-        background: url("/static/assets/images/img-banner3.png") no-repeat;
+        background: url("../assets/images/img-banner3.png") no-repeat;
         background-size: 100% 100%;
         padding: 0 1rem 0 1rem
 
