@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../static/css/banner.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/css/responsibe.css">
-    <link rel="stylesheet" href="../static/css/modal.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,13 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
           rel="stylesheet">
     <link rel="icon" href="../static/assets/logos/Vector.svg">
+    <link rel="stylesheet" href="../static/css/modal.css">
 
     <script defer src="../static/js/validacionFormularios/subidaImagen.js"></script>
     <script defer src="../static/js/validacionFormularios/validacionFormularioContacto.js"></script>
-    <script defer type="module" src="../static/js/controladores/registroProductoController.js"></script>
+    <script defer type="module" src="../static/js/controladores/edicionProductoController.js"></script>
     <script defer type="module" src="../static/js/modal/modal.js"></script>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     <title>Alura Geek</title>
 
 </head>
@@ -48,7 +47,12 @@
             <input  class="input-search" placeholder="¿Que deseas buscar?" type="text">
             <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
         </div>
+
     </section>
+
+
+
+
 
 </header>
 
@@ -56,7 +60,7 @@
 
     <section class="formulario">
         <form class="formulario__form" action="" novalidate>
-            <h3>Agregar Nuevo Producto</h3>
+            <h3>Editar Producto</h3>
 
             <div class="input__label">
                 <label class="input__label-label" for="">Categoria</label>
@@ -92,7 +96,7 @@
 
             </div>
 
-            <input class="input-btn" type="submit" value="Agregar Producto">
+            <input class="input-btn" type="submit" value="Editar Producto">
 
         </form>
     </section>
@@ -156,8 +160,10 @@
 
 </div>
 
+
 <section class="modal">
 
 </section>
+
 </body>
 </html>

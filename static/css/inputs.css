@@ -63,3 +63,16 @@
     padding: 2rem 1rem 2rem 1rem;
     color: #2A7AE4;
 }
+
+.input__image{
+    background: #FFFFFF;
+    height: 20rem;
+    border: dashed #C8C8C8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+

@@ -6,18 +6,29 @@
     <link href="../static/css/common.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/inputs.css">
     <link rel="stylesheet" href="../static/css/card.css">
+    <link rel="stylesheet" href="../static/css/modal.css">
 
     <link href="../static/css/header.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/banner.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/css/productos.css">
     <link rel="stylesheet" href="../static/css/responsibe.css">
+    <link rel="stylesheet" href="../static/css/paginacion.css">
+    <link rel="stylesheet" href="../static/css/load.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
           rel="stylesheet">
     <link rel="icon" href="../static/assets/logos/Vector.svg">
+    <script defer src="../static/js/validacionFormularios/validacionFormularioContacto.js"></script>
+    <script defer type="module" src="../static/js/controladores/LitarProductosController.js"></script>
+    <script defer type="module" src="../static/js/controladores/filtradoProductosController.js"></script>
+    <script defer type="module" src="../static/js/modal/modal.js"></script>
+    <script defer src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+
     <title>Alura Geek</title>
 </head>
 <body>
@@ -27,19 +38,23 @@
 
     <section class="header__logo-busqueda">
         <div class="logo">
-            <img alt="" src="../static/assets/logos/Vector.svg">
-            <img alt="" src="../static/assets/logos/AluraGeek-1.svg">
-            <img alt="" src="../static/assets/logos/AluraGeek.svg">
+            <a href="../index.html">
+                <img alt="" src="../static/assets/logos/Vector.svg">
+                <img alt="" src="../static/assets/logos/AluraGeek-1.svg">
+                <img alt="" src="../static/assets/logos/AluraGeek.svg">
+            </a>
+
         </div>
         <div class="header__search">
             <input class="input-search" placeholder="¿Que deseas buscar?" type="text">
             <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+
         </div>
 
     </section>
 
     <button class="btn-login">Login</button>
-    <a href="#"><img class="header_lupa" src="../static/assets/icons/lupa.svg"></a>
+
 
 
 </header>
@@ -52,193 +67,36 @@
             <button class="btn-banner" onclick="window.location.href='formularioProductos.html'">Agregar Producto</button>
 
         </div>
-
+        <section class="load">
+            <div class="load__container">
+                <img class="load__icon" src="../static/assets/logos/Vector.svg" alt="">
+                <p>Disculpa las molestias!!</p>
+            </div>
+        </section>
         <div class="productos__items">
 
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/casco.png" alt="">
+
+
+            <section class="load">
+                <div class="load__container">
+                    <img class="load__icon" src="../static/assets/logos/Vector.svg" alt="">
+                    <p>Disculpa las molestias!!</p>
                 </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="detallesProducto.html">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/casco_vader.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/muñeco_yoda.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/soldado.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/nini_yoda.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/vader.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/controlxbox.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/play5.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/nintendo.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/swicht.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/xbox.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/gameBoy.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/camisa.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/camisa2.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/sonic.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/alarma.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/vr.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
-            <div class="productos__card">
-                <div class="card-img">
-                    <img src="../static/assets/images/pika.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p>Producto XYZ</p>
-                    <span>$ 60,00</span>
-                    <a href="">Ver producto</a>
-                </div>
-            </div>
+            </section>
+
         </div>
+    </section>
+    <section class="paginacion">
+        <button class="btn-anterior">Anterior</button>
+        <button class="btn-siguiente">Siguiente</button>
     </section>
 
 </main>
+
+
+
+
+
 <footer class="footer">
 
     <div class="footer__logo">
@@ -264,17 +122,18 @@
     </div>
     <div class="footer__contacto">
         <span>Hable con nosotros</span>
-        <form class="footer__form" action="">
+        <form class="footer__form" action="" novalidate>
             <div class="input__label">
                 <label class="input__label-label" for="">Nombre</label>
-                <input class="input__label-input" type="text">
+                <input name="nombre"  class="input__label-input" type="text" required maxlength="40">
+                <p class="text-error" id="error-nombre"></p>
             </div>
+
             <div class="input__label">
-                <label class="input__label-label" for="">Mensaje</label>
-                <textarea class="input__label-area" name="" id=""></textarea>
+                <label class="input__label-label" for="" >Mensaje</label>
+                <textarea name="mensaje" class="input__label-area" name="" id="" required maxlength="100" ></textarea>
+                <p class="text-error" id="error-mensaje"></p>
             </div>
-
-
             <input class="input__label-btn" type="submit" value="Enviar mensaje">
         </form>
 
@@ -290,5 +149,16 @@
     <p>2022</p>
 
 </div>
+
+<section class="modal">
+
+</section>
+
+<section class="error__busqueda">
+    <img class="error__img" src="../static/assets/logos/resultado.svg" alt="">
+    <p class="error__parrafo">No hay resultados</p>
+</section>
+
+
 </body>
 </html>

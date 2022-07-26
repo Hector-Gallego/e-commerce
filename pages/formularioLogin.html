@@ -17,7 +17,12 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
           rel="stylesheet">
-    <title>Title</title>
+
+
+    <script defer src="../static/js/validacionFormularios/validacionFormularioInicioSesion.js"></script>
+    <script defer src="../static/js/validacionFormularios/validacionFormularioContacto.js"></script>
+
+
     <link rel="icon" href="../static/assets/logos/Vector.svg">
     <title>Alura Geek</title>
 
@@ -30,15 +35,15 @@
     <section class="header__logo-busqueda">
         <div class="logo">
 
-            <img alt="" src="../static/assets/logos/Vector.svg">
-            <img alt="" src="../static/assets/logos/AluraGeek-1.svg">
-            <img alt="" src="../static/assets/logos/AluraGeek.svg">
+            <a href="../index.html">
+                <img alt="" src="../static/assets/logos/Vector.svg">
+                <img alt="" src="../static/assets/logos/AluraGeek-1.svg">
+                <img alt="" src="../static/assets/logos/AluraGeek.svg">
+            </a>
+
 
         </div>
-        <div class="header__search">
-            <input class="input-search" placeholder="¿Que deseas buscar?" type="text">
-            <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
-        </div>
+
 
     </section>
 
@@ -59,17 +64,21 @@
 <main>
 
     <section class="formulario">
-        <form class="formulario__form" class="fo" action="">
+        <form class="formulario__form" action="#" novalidate>
             <h3>Iniciar Sesión</h3>
             <div class="input__label">
+
                 <label class="input__label-label" for="">Correo</label>
-                <input class="input__label-input" type="text">
+                <input name="usuario" class="input__label-input" type="email" required>
+                <p id="error-usuario" class="text-error"></p>
             </div>
             <div class="input__label">
                 <label class="input__label-label" for="">Contraseña</label>
-                <input class="input__label-input" type="password">
+                <input name="contrasenia" class="input__label-input" type="password" required>
+                <p id="error-contra" class="text-error"></p>
             </div>
             <input class="input-btn" type="submit" value="Entrar">
+
         </form>
     </section>
 
@@ -102,18 +111,21 @@
         </div>
         <div class="footer__contacto">
             <span>Hable con nosotros</span>
-            <form class="footer__form" action="">
+            <form class="footer__form" action="#" novalidate>
                 <div class="input__label">
                     <label class="input__label-label" for="">Nombre</label>
-                    <input  class="input__label-input" type="text">
+                    <input name="nombre" class="input__label-input" type="text" required maxlength="40">
+                    <p class="text-error" id="error-nombre"></p>
                 </div>
+
                 <div class="input__label">
                     <label class="input__label-label" for="">Mensaje</label>
-                    <textarea class="input__label-area" name="" id="" ></textarea>
+                    <textarea name="mensaje" class="input__label-area" name="" id="" required
+                              maxlength="100"></textarea>
+                    <p class="text-error" id="error-mensaje"></p>
                 </div>
+                <input id="btn-footer" class="input__label-btn" type="submit" value="Enviar mensaje">
 
-
-                <input class="input__label-btn" type="submit" value="Enviar mensaje">
             </form>
 
 
@@ -133,5 +145,7 @@
     <p>2022</p>
 
 </div>
+
+
 </body>
 </html>
